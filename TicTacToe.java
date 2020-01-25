@@ -6,6 +6,35 @@ import java.util.*;
 import java.lang.*;
 
 
+ class Checking{
+  int x=0;
+  Checking(int [] grid,int x,Integer close){
+            
+            if(grid[0]+grid[1]+grid[2]==3*x){
+                  //System.out.println("winner is player--1");
+                }else if(grid[3]+grid[4]+grid[5]==3*x){
+                  //System.out.println("winner is player--1");
+                }else if(grid[6]+grid[7]+grid[8]==3*x){
+                  //System.out.println("winner is player--1");
+                }else if(grid[0]+grid[3]+grid[6]==3*x){
+                  //System.out.println("winner is player--1");
+                }else if(grid[1]+grid[4]+grid[7]==3*x){
+                  //System.out.println("winner is player--1");
+                }else if(grid[2]+grid[5]+grid[8]==3*x){
+                  //System.out.println("winner is player--1");
+                }else if(grid[2]+grid[4]+grid[6]==3*x){
+                  //System.out.println("winner is player--1");
+                }else if(grid[0]+grid[4]+grid[8]==3*x){
+                  //System.out.println("winner is player--1");
+                }
+                else{
+                  x=1;
+
+                }
+  }
+}
+
+
 
 
 class PlayerPlayer{
