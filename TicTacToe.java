@@ -44,6 +44,7 @@ class playerplayer{
       int x1,y1,x2,y2,x11,y11;
       int depth1;
       int type1=type;
+      int undo=0;
       int mul;
       //int depth = math.log(size)/math.log(type);
       int count=0;
@@ -53,9 +54,15 @@ class playerplayer{
       while(t-->0){
               
             type1=type;
-        System.out.println("enter the imput pl1:");
+            while(true){
+            System.out.println("enter the imput pl1:");
             x1 = sc.nextInt();
             y1 = sc.nextInt();
+            System.out.println("if want to undo type--1 ");
+            undo=sc.nextInt();
+            if(undo==0){
+             break;
+            }}
             if(arr[x1][y1]==0)
             arr[x1][y1]=1;
             x11=x1;
@@ -120,8 +127,15 @@ class playerplayer{
             }
         }
         else{
+             while(true){
+            System.out.println("enter the imput pl1:");
             x1 = sc.nextInt();
             y1 = sc.nextInt();
+            System.out.println("if want to undo type--1 ");
+            undo=sc.nextInt();
+            if(undo==0){
+             break;
+            }}
             }
             arr[x1][y1]=-1;
             x11=x1;
@@ -169,9 +183,15 @@ class playerplayer{
       }
 
       type1=type;
-        System.out.println("enter the imput pl1:");
+         while(true){
+            System.out.println("enter the imput pl1:");
             x1 = sc.nextInt();
             y1 = sc.nextInt();
+            System.out.println("if want to undo type--1 ");
+            undo=sc.nextInt();
+            if(undo==0){
+             break;
+            }}
             arr[x1][y1]=1;
             while(type1<=size){
               x11=x1;
